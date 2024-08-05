@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UOMO Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .dropdown-menu {
+                position: relative;
+                display: block;
+                background: white;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full">
+        <!-- Header -->
+        <header class="bg-white shadow-sm z-50 relative">
+            <div class="container mx-auto flex justify-between items-center py-4 px-6">
+                <div class="flex items-center space-x-4">
+                    <img src="./assets/logo.png" alt="Logo" class="h-10">
+                    <nav class="hidden md:flex space-x-6">
+                        <div class="dropdown relative">
+                            <a href="./index.html" class="text-gray-600">Home</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="./index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home
+                                    1</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home 2</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative">
+                            <a href="./shop.html" class="text-gray-600">Shop</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="./shop.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Men</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Women</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Kids</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative">
+                            <a href="./blog.html" class="text-red-900">Blog</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="./blog.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog 1</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog 2</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative">
+                            <a href="./page.html" class="text-gray-600">Pages</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About Us</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact Us</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">FAQ</a>
+                            </div>
+                        </div>
+                        <a href="./about.html" class="text-gray-600">About</a>
+                        <a href="./contact.html" class="text-gray-600">Contact</a>
+                    </nav>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/search.png" alt="Search" class="h-6">
+                    </a>
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/heart.png" alt="Heart" class="h-6">
+                    </a>
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/shopping-.png" alt="Cart" class="h-6">
+                    </a>
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/user.png" alt="User" class="h-6">
+                    </a>
+                </div>
+
+            </div>
+        </header>
+
+
+
+        <!-- Hero Section -->
+        <section class="bg-gray-100 border border-gray-300 mx-auto my-8" style="width: 90%;">
+            <div class="relative h-64 bg-cover bg-center" style="background-image: url('./blog-assets/image.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center px-8">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white">THE BLOG</h1>
+                    <div class="mt-4 flex space-x-4 text-white">
+                        <a href="#" class="hover:text-red-500">All</a>
+                        <a href="#" class="hover:text-red-500">Company</a>
+                        <a href="#" class="hover:text-red-500">Fashion</a>
+                        <a href="#" class="hover:text-red-500">Style</a>
+                        <a href="#" class="hover:text-red-500">Trends</a>
+                        <a href="#" class="hover:text-red-500">Beauty</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Posts Section -->
+        <section class="py-12 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img src="./blog-assets/image1.jpg" alt="Blog Post 1" class="w-full h-auto rounded-lg mb-4">
+                        <p class="text-gray-500 text-sm mb-2">BY ADMIN | APRIL 05, 2023</p>
+                        <h3 class="text-xl font-bold mb-2">Woman with good shoes is never be ugly place</h3>
+                        <p class="text-gray-600 mb-4">Middle east brought greater also morning green saying had good.
+                            Open star day let over gathered, grass face one every light of after.</p>
+                        <a href="#" class="text-red-500 font-bold">CONTINUE READING</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img src="./blog-assets/image2.jpg" alt="Blog Post 2" class="w-full h-auto rounded-lg mb-4">
+                        <p class="text-gray-500 text-sm mb-2">BY ADMIN | APRIL 05, 2023</p>
+                        <h3 class="text-xl font-bold mb-2">5 Tips to Increase Your Online Sales</h3>
+                        <p class="text-gray-600 mb-4">Middle east brought greater also morning green saying had good.
+                            Open star day let over gathered, grass face one every light of after.</p>
+                        <a href="#" class="text-red-500 font-bold">CONTINUE READING</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img src="./blog-assets/image3.jpg" alt="Blog Post 3" class="w-full h-auto rounded-lg mb-4">
+                        <p class="text-gray-500 text-sm mb-2">BY ADMIN | APRIL 05, 2023</p>
+                        <h3 class="text-xl font-bold mb-2">Tree earth fowl given moveth deep lesser After</h3>
+                        <p class="text-gray-600 mb-4">Middle east brought greater also morning green saying had good.
+                            Open star day let over gathered, grass face one every light of after.</p>
+                        <a href="#" class="text-red-500 font-bold">CONTINUE READING</a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img src="./blog-assets/image4.jpg" alt="Blog Post 4" class="w-full h-auto rounded-lg mb-4">
+                        <p class="text-gray-500 text-sm mb-2">BY ADMIN | APRIL 05, 2023</p>
+                        <h3 class="text-xl font-bold mb-2">Given Set was without from god divide rule Hath</h3>
+                        <p class="text-gray-600 mb-4">Middle east brought greater also morning green saying had good.
+                            Open star day let over gathered, grass face one every light of after.</p>
+                        <a href="#" class="text-red-500 font-bold">CONTINUE READING</a>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <button class="px-6 py-2 bg-gray-300 text-gray-800 rounded-full">SHOW MORE</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#e4e4e4] text-black py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <img src="./assets/logo.png" alt="Logo" class="mb-4">
+                        <p>1234 Street Name, City, State 56789</p>
+                        <p>info@example.com</p>
+                        <p>+1 234 567 890</p>
+                        <div class="flex space-x-4 mt-4">
+                            <a href="#" class="text-black"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">COMPANY</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-black">About Us</a></li>
+                            <li><a href="#" class="text-black">Careers</a></li>
+                            <li><a href="#" class="text-black">Blog</a></li>
+                            <li><a href="#" class="text-black">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">SHOP</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-black">Men</a></li>
+                            <li><a href="#" class="text-black">Women</a></li>
+                            <li><a href="#" class="text-black">Kids</a></li>
+                            <li><a href="#" class="text-black">Sale</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">HELP</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-black">My Account</a></li>
+                            <li><a href="#" class="text-black">Order Tracking</a></li>
+                            <li><a href="#" class="text-black">FAQs</a></li>
+                            <li><a href="#" class="text-black">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 text-center text-black">
+                    <p>©2024 UOMO. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

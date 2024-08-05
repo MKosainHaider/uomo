@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UOMO Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .dropdown-menu {
+                position: relative;
+                display: block;
+                background: white;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full">
+        <!-- Header -->
+        <header class="bg-white shadow-sm z-50 relative">
+            <div class="container mx-auto flex justify-between items-center py-4 px-6">
+                <div class="flex items-center space-x-4">
+                    <img src="./assets/logo.png" alt="Logo" class="h-10">
+                    <nav class="hidden md:flex space-x-6">
+                        <div class="dropdown relative">
+                            <a href="./index.html" class="text-gray-600">Home</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="./index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home
+                                    1</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home 2</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative">
+                            <a href="./shop.html" class="text-gray-600">Shop</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="./shop.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Men</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Women</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Kids</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative">
+                            <a href="./blog.html" class="text-gray-600">Blog</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="./blog.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog 1</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog 2</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative">
+                            <a href="./page.html" class="text-red-900">Pages</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About Us</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact Us</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">FAQ</a>
+                            </div>
+                        </div>
+                        <a href="./about.html" class="text-gray-600">About</a>
+                        <a href="./contact.html" class="text-gray-600">Contact</a>
+                    </nav>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/search.png" alt="Search" class="h-6">
+                    </a>
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/heart.png" alt="Heart" class="h-6">
+                    </a>
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/shopping-.png" alt="Cart" class="h-6">
+                    </a>
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/user.png" alt="User" class="h-6">
+                    </a>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Login Section -->
+        <section class="py-12">
+            <div class="container mx-auto px-6">
+                <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex justify-center space-x-6 mb-6">
+                        <a href="#" class="text-gray-600">Login</a>
+                        <a href="#" class="text-gray-600">Register</a>
+                    </div>
+                    <form>
+                        <div class="mb-6">
+                            <input type="email" placeholder="Email address *"
+                                class="border border-gray-300 rounded p-3 w-full">
+                        </div>
+                        <div class="mb-6">
+                            <input type="password" placeholder="Password *"
+                                class="border border-gray-300 rounded p-3 w-full">
+                            <div class="flex justify-between items-center mt-2">
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" class="form-checkbox">
+                                    <span class="ml-2 text-gray-600">Remember me</span>
+                                </label>
+                                <a href="#" class="text-gray-600 text-sm">Lost password?</a>
+                            </div>
+                        </div>
+                        <button class="px-6 py-3 bg-black text-white rounded w-full">LOG IN</button>
+                        <p class="mt-4 text-center text-gray-600">No account yet? <a href="#"
+                                class="text-gray-600">Create Account</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#e4e4e4] text-black py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <img src="./assets/logo.png" alt="Logo" class="mb-4">
+                        <p>1234 Street Name, City, State 56789</p>
+                        <p>info@example.com</p>
+                        <p>+1 234 567 890</p>
+                        <div class="flex space-x-4 mt-4">
+                            <a href="#" class="text-black"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">COMPANY</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-black">About Us</a></li>
+                            <li><a href="#" class="text-black">Careers</a></li>
+                            <li><a href="#" class="text-black">Blog</a></li>
+                            <li><a href="#" class="text-black">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">SHOP</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-black">Men</a></li>
+                            <li><a href="#" class="text-black">Women</a></li>
+                            <li><a href="#" class="text-black">Kids</a></li>
+                            <li><a href="#" class="text-black">Sale</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">HELP</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-black">My Account</a></li>
+                            <li><a href="#" class="text-black">Order Tracking</a></li>
+                            <li><a href="#" class="text-black">FAQs</a></li>
+                            <li><a href="#" class="text-black">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 text-center text-black">
+                    <p>©2024 UOMO. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

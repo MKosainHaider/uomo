@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UOMO</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .dropdown-menu {
+                position: relative;
+                display: block;
+                background: white;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full">
+        <!-- Header -->
+        <header class="bg-white shadow-sm z-50 relative">
+            <div class="container mx-auto flex justify-between items-center py-4 px-6">
+                <div class="flex items-center space-x-4">
+                    <img src="./assets/logo.png" alt="Logo" class="h-10">
+                    <nav class="hidden md:flex space-x-6">
+                        <div class="dropdown relative">
+                            <a href="./index.html" class="text-red-900">Home</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="./index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home
+                                    1</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home 2</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative">
+                            <a href="./shop.html" class="text-gray-600">Shop</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="./shop.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Men</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Women</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Kids</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative">
+                            <a href="./blog.html" class="text-gray-600">Blog</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="./blog.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog 1</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog 2</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative">
+                            <a href="./page.html" class="text-gray-600">Pages</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About Us</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact Us</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">FAQ</a>
+                            </div>
+                        </div>
+                        <a href="./about.html" class="text-gray-600">About</a>
+                        <a href="./contact.html" class="text-gray-600">Contact</a>
+                    </nav>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/search.png" alt="Search" class="h-6">
+                    </a>
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/heart.png" alt="Heart" class="h-6">
+                    </a>
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/shopping-.png" alt="Cart" class="h-6">
+                    </a>
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/user.png" alt="User" class="h-6">
+                    </a>
+                </div>
+
+            </div>
+        </header>
+
+
+        <!-- Hero Section -->
+        <section class="relative bg-pink-100 h-64 md:h-80 lg:h-96 bg-cover bg-center m-4"
+            style="background-image: url('./home-assets/img1.jpg'); background-size: cover; background-position: center;">
+            <div
+                class="absolute inset-0 flex flex-col justify-center items-center text-center p-4 bg-opacity-50 bg-black">
+                <p class="text-red-500 mb-2">HOT TREND</p>
+                <h1 class="text-4xl md:text-5xl font-bold text-white">SUMMER SALE STYLISH WOMENS</h1>
+                <a href="#" class="mt-4 px-6 py-2 bg-red-500 text-white rounded-full">Discover More</a>
+            </div>
+        </section>
+        <!-- Collections Section -->
+        <section class="flex flex-row m-2 items-center text-center  ">
+            <div class="flex flex-row p-3 ">
+
+                <div class="flex-1 p-4 bg-gray-400">
+                    <!-- <img src="./home-assets/collection_grid_1.jpg " alt=""> -->
+                    <h2 class="text-2xl font-bold text-black">WOMEN COLLECTION</h2>
+                    <a href="#" class="mt-2 px-4 py-2 bg-white text-gray-800 rounded-full">Shop Now</a>
+                </div>
+                <div class="flex flex-col">
+                    <div class="bg-dark-50">
+                        <h2 class="text-2xl font-bold text-black">WOMEN COLLECTION</h2>
+                        <a href="#" class="mt-2 px-4 py-2 bg-white text-gray-800 rounded-full">Shop Now</a>
+                    </div>
+                    <div class=" flex flex-row">
+                        <div>
+                            <h2 class="text-2xl font-bold text-black">WOMEN COLLECTION</h2>
+                            <a href="#" class="mt-2 px-4 py-2 bg-white text-gray-800 rounded-full">Shop Now</a>
+
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-black">WOMEN COLLECTION</h2>
+                            <a href="#" class="mt-2 px-4 py-2 bg-white text-gray-800 rounded-full">Shop Now</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Collections Section -->
+        <!-- <section class="py-12">
+            <div class="container mx-auto px-6 grid gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="relative grid">
+                        <img src="./home-assets/collection_grid_1.jpg" alt="Women Collection" class="w-full h-auto">
+                        <div class="absolute inset-0 grid place-items-center bg-gray-900 bg-opacity-50">
+                            <h2 class="text-2xl font-bold text-white">WOMEN COLLECTION</h2>
+                            <a href="#" class="mt-2 px-4 py-2 bg-white text-gray-800 rounded-full">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="grid-cols-1">
+
+                        <div class="relative grid">
+                            <img src="./home-assets/collection_grid_2.jpg" alt="Men Collection" class="w-full h-auto">
+                            <div class="absolute inset-0 grid place-items-center bg-gray-900 bg-opacity-50">
+                                <h2 class="text-2xl font-bold text-white">MEN COLLECTION</h2>
+                                <a href="#" class="mt-2 px-4 py-2 bg-white text-gray-800 rounded-full">Shop Now</a>
+                            </div>
+                        </div>
+                        <div ">
+                            <div class="relative grid">
+                                <img src="./home-assets/collection_grid_3.jpg" alt=" Kids Collection"
+                                    class="w-full h-auto">
+                                <div class="absolute inset-0 grid place-items-center bg-gray-900 bg-opacity-50">
+                                    <h2 class="text-2xl font-bold text-white">KIDS COLLECTION</h2>
+                                    <a href="#" class="mt-2 px-4 py-2 bg-white text-gray-800 rounded-full">Shop Now</a>
+                                </div>
+                            </div>
+                            <div class="relative grid">
+                                <img src="." alt=" Kids Collection"
+                                    class="w-full h-auto">
+                                <div class="absolute inset-0 grid place-items-center bg-gray-900 bg-opacity-50">
+                                    <h2 class="text-2xl font-bold text-white">KIDS COLLECTION</h2>
+                                    <a href="#" class="mt-2 px-4 py-2 bg-white text-gray-800 rounded-full">Shop Now</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Products Section -->
+        <section class="py-12 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-2xl font-bold text-center mb-6">OUR TRENDY PRODUCTS</h2>
+                <div class="flex justify-center space-x-4 mb-6">
+                    <a href="#" class="text-gray-600">All</a>
+                    <a href="#" class="text-gray-600">New Arrivals</a>
+                    <a href="#" class="text-gray-600">Best Seller</a>
+                    <a href="#" class="text-gray-600">Top Rated</a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-white p-4">
+                        <img src="./home-assets/item1.jpg" alt="Product" class="w-full h-auto">
+                        <h3 class="text-lg font-bold mt-4">Oversized Cardigan</h3>
+                        <p class="text-gray-600 mt-2">$32.00</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-gray-400"></i>
+                            </div>
+                            <a href="#" class="text-gray-600"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4">
+                        <img src="./home-assets/item2.jpg" alt="Product" class="w-full h-auto">
+                        <h3 class="text-lg font-bold mt-4">Men's T-Shirt</h3>
+                        <p class="text-gray-600 mt-2">$22.00</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-gray-400"></i>
+                            </div>
+                            <a href="#" class="text-gray-600"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4">
+                        <img src="./home-assets/item3.jpg" alt="Product" class="w-full h-auto">
+                        <h3 class="text-lg font-bold mt-4">Stylish Dress</h3>
+                        <p class="text-gray-600 mt-2">$97.00</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-gray-400"></i>
+                            </div>
+                            <a href="#" class="text-gray-600"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4">
+                        <img src="./home-assets/item4.jpg" alt="Product" class="w-full h-auto">
+                        <h3 class="text-lg font-bold mt-4">Plaid Shirt</h3>
+                        <p class="text-gray-600 mt-2">$44.00</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-gray-400"></i>
+                            </div>
+                            <a href="#" class="text-gray-600"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4">
+                        <img src="./home-assets/item5.jpg" alt="Product" class="w-full h-auto">
+                        <h3 class="text-lg font-bold mt-4">Yellow Hoodie</h3>
+                        <p class="text-gray-600 mt-2">$32.00</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-gray-400"></i>
+                            </div>
+                            <a href="#" class="text-gray-600"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4">
+                        <img src="./home-assets/item6.jpg" alt="Product" class="w-full h-auto">
+                        <h3 class="text-lg font-bold mt-4">White Tank Top</h3>
+                        <p class="text-gray-600 mt-2">$22.00</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-gray-400"></i>
+                            </div>
+                            <a href="#" class="text-gray-600"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4">
+                        <img src="./home-assets/item7.jpg" alt="Product" class="w-full h-auto">
+                        <h3 class="text-lg font-bold mt-4">Grey Hoodie</h3>
+                        <p class="text-gray-600 mt-2">$97.00</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-gray-400"></i>
+                            </div>
+                            <a href="#" class="text-gray-600"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4">
+                        <img src="./home-assets/item8.jpg" alt="Product" class="w-full h-auto">
+                        <h3 class="text-lg font-bold mt-4">Black Dress</h3>
+                        <p class="text-gray-600 mt-2">$44.00</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-yellow-500"></i>
+                                <i class="fas fa-star text-gray-400"></i>
+                            </div>
+                            <a href="#" class="text-gray-600"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spring Collection Section -->
+        <section class="relative py-12 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="bg-white p-6 text-center">
+                    <h2 class="text-2xl font-bold mb-4">SPRING COLLECTION</h2>
+                    <div class="text-2xl font-bold text-red-500 mb-4">SALE OF THE YEAR</div>
+                    <div class="flex justify-center space-x-2">
+                        <div class="flex flex-col items-center">
+                            <span class="text-4xl font-bold">53</span>
+                            <span class="text-sm">DAYS</span>
+                        </div>
+                        <span class="text-4xl font-bold">:</span>
+                        <div class="flex flex-col items-center">
+                            <span class="text-4xl font-bold">11</span>
+                            <span class="text-sm">HOURS</span>
+                        </div>
+                        <span class="text-4xl font-bold">:</span>
+                        <div class="flex flex-col items-center">
+                            <span class="text-4xl font-bold">8</span>
+                            <span class="text-sm">MINUTES</span>
+                        </div>
+                        <span class="text-4xl font-bold">:</span>
+                        <div class="flex flex-col items-center">
+                            <span class="text-4xl font-bold">15</span>
+                            <span class="text-sm">SECONDS</span>
+                        </div>
+                    </div>
+                    <a href="#" class="mt-4 px-6 py-2 bg-red-500 text-white rounded-full">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limited Edition Section -->
+        <section class="py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-2xl font-bold text-center mb-6">LIMITED EDITION</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-white p-4">
+                        <img src="./home-assets/image10.jpg" alt="Product" class="w-full h-auto">
+                        <h3 class="text-lg font-bold mt-4">Product Name</h3>
+                        <p class="text-gray-600 mt-2">$Price</p>
+                    </div>
+                    <div class="bg-white p-4">
+                        <img src="./home-assets/image12.jpg" alt="Product" class="w-full h-auto">
+                        <h3 class="text-lg font-bold mt-4">Product Name</h3>
+                        <p class="text-gray-600 mt-2">$Price</p>
+                    </div>
+                    <div class="bg-white p-4">
+                        <img src="./home-assets/image15.jpg" alt="Product" class="w-full h-auto">
+                        <h3 class="text-lg font-bold mt-4">Product Name</h3>
+                        <p class="text-gray-600 mt-2">$Price</p>
+                    </div>
+                    <div class="bg-white p-4">
+                        <img src="./home-assets/image25.jpg" alt="Product" class="w-full h-auto">
+                        <h3 class="text-lg font-bold mt-4">Product Name</h3>
+                        <p class="text-gray-600 mt-2">$Price</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Section -->
+        <section class="py-12 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-2xl font-bold text-center mb-6">@UOMO</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img src="./home-assets/i1.jpg" alt="Instagram Photo" class="w-full h-auto">
+                    <img src="./home-assets/i2.jpg" alt="Instagram Photo" class="w-full h-auto">
+                    <img src="./home-assets/i3.jpg" alt="Instagram Photo" class="w-full h-auto">
+                    <img src="./home-assets/i4.jpg" alt="Instagram Photo" class="w-full h-auto">
+                    <img src="./home-assets/i5.jpg" alt="Instagram Photo" class="w-full h-auto">
+                    <img src="./home-assets/i6.jpg" alt="Instagram Photo" class="w-full h-auto">
+                    <img src="./home-assets/i7.jpg" alt="Instagram Photo" class="w-full h-auto">
+                    <img src="./home-assets/i8.jpg" alt="Instagram Photo" class="w-full h-auto">
+                    <img src="./home-assets/i9.jpg" alt="Instagram Photo" class="w-full h-auto">
+                    <img src="./home-assets/i10.jpg" alt="Instagram Photo" class="w-full h-auto">
+                    <img src="./home-assets/i11.jpg" alt="Instagram Photo" class="w-full h-auto">
+                    <img src="./home-assets/i12.jpg" alt="Instagram Photo" class="w-full h-auto">
+                </div>
+            </div>
+        </section>
+        <!-- Features Section -->
+        <section class="py-12 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <img src="./about-assets/Packagel.svg" alt="Fast and Free Delivery" class="mx-auto mb-4 h-16">
+                        <h4 class="text-xl font-bold mb-2">Fast and Free Delivery</h4>
+                        <p class="text-gray-600">Free delivery for all orders over $140</p>
+                    </div>
+                    <div>
+                        <img src="./about-assets/customer-care.png" alt="24/7 Customer Support"
+                            class="mx-auto mb-4 h-16">
+                        <h4 class="text-xl font-bold mb-2">24/7 Customer Support</h4>
+                        <p class="text-gray-600">Friendly 24/7 customer support</p>
+                    </div>
+                    <div>
+                        <img src="./about-assets/shield.png" alt="Money Back Guarantee" class="mx-auto mb-4 h-16">
+                        <h4 class="text-xl font-bold mb-2">Money Back Guarantee</h4>
+                        <p class="text-gray-600">We return money within 30 days</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#e4e4e4] text-black py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <img src="./assets/logo.png" alt="Logo" class="mb-4">
+                        <p>1234 Street Name, City, State 56789</p>
+                        <p>info@example.com</p>
+                        <p>+1 234 567 890</p>
+                        <div class="flex space-x-4 mt-4">
+                            <a href="#" class="text-black"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">COMPANY</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-black">About Us</a></li>
+                            <li><a href="#" class="text-black">Careers</a></li>
+                            <li><a href="#" class="text-black">Blog</a></li>
+                            <li><a href="#" class="text-black">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">SHOP</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-black">Men</a></li>
+                            <li><a href="#" class="text-black">Women</a></li>
+                            <li><a href="#" class="text-black">Kids</a></li>
+                            <li><a href="#" class="text-black">Sale</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">HELP</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-black">My Account</a></li>
+                            <li><a href="#" class="text-black">Order Tracking</a></li>
+                            <li><a href="#" class="text-black">FAQs</a></li>
+                            <li><a href="#" class="text-black">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 text-center text-black">
+                    <p>©2024 UOMO. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

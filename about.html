@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About UOMO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .dropdown-menu {
+                position: relative;
+                display: block;
+                background: white;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full">
+        <!-- Header -->
+        <header class="bg-white shadow-sm z-50 relative">
+            <div class="container mx-auto flex justify-between items-center py-4 px-6">
+                <div class="flex items-center space-x-4">
+                    <img src="./assets/logo.png" alt="Logo" class="h-10">
+                    <nav class="hidden md:flex space-x-6">
+                        <div class="dropdown relative">
+                            <a href="./index.html" class="text-gray-600">Home</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="./index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home
+                                    1</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home 2</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative">
+                            <a href="./shop.html" class="text-gray-600">Shop</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="./shop.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Men</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Women</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Kids</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative">
+                            <a href="./blog.html" class="text-gray-600">Blog</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="./blog.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog 1</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog 2</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative">
+                            <a href="./page.html" class="text-gray-600">Pages</a>
+                            <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md">
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About Us</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact Us</a>
+                                <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">FAQ</a>
+                            </div>
+                        </div>
+                        <a href="./about.html" class="text-red-900">About</a>
+                        <a href="./contact.html" class="text-gray-600">Contact</a>
+                    </nav>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/search.png" alt="Search" class="h-6">
+                    </a>
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/heart.png" alt="Heart" class="h-6">
+                    </a>
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/shopping-.png" alt="Cart" class="h-6">
+                    </a>
+                    <a href="#" class="text-gray-600">
+                        <img src="./assets/user.png" alt="User" class="h-6">
+                    </a>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+
+        <section class="relative flex flex-col items-center text-center p-4">
+            <div class="mb-4">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800">ABOUT UOMO</h1>
+            </div>
+            <div>
+                <img src="./about-assets/about-1.jpg" alt="About UOMO" class="w-full h-auto object-cover">
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section class="py-12">
+            <div class="container mx-auto px-6">
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold mb-4">OUR STORY</h2>
+                    <p class="text-gray-600 mb-6">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Vivamus laoreet. Nullam tincidunt adipiscing enim. Vestibulum ullamcorper mauris at ligula.
+                        Fusce fermentum.
+                        Pellentesque commodo eros a enim. Suspendisse feugiat. Nunc posuere. Praesent turpis. Aenean
+                        posuere, tortor
+                        sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec
+                        elit libero,
+                        sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac
+                        venenatis
+                        condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante
+                        ipsum primis
+                        in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Aliquam lorem ante,
+                        dapibus in,
+                        viverra quis, feugiat a, tellus.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Our Mission</h3>
+                        <p class="text-gray-600">
+                            Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Our Vision</h3>
+                        <p class="text-gray-600">
+                            Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="order-2 md:order-1">
+                        <img src="./about-assets/about-2.jpg" alt="The Company"
+                            class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h3 class="text-xl font-bold mb-4">The Company</h3>
+                        <p class="text-gray-600 mb-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet egestas egestas sit tincidunt.
+                            Scelerisque
+                            mauris velit id.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Amet egestas egestas sit tincidunt scelerisque mauris velit.</li>
+                            <li>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-12 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <img src="./about-assets/Packagel.svg" alt="Fast and Free Delivery" class="mx-auto mb-4 h-16">
+                        <h4 class="text-xl font-bold mb-2">Fast and Free Delivery</h4>
+                        <p class="text-gray-600">Free delivery for all orders over $140</p>
+                    </div>
+                    <div>
+                        <img src="./about-assets/customer-care.png" alt="24/7 Customer Support"
+                            class="mx-auto mb-4 h-16">
+                        <h4 class="text-xl font-bold mb-2">24/7 Customer Support</h4>
+                        <p class="text-gray-600">Friendly 24/7 customer support</p>
+                    </div>
+                    <div>
+                        <img src="./about-assets/shield.png" alt="Money Back Guarantee" class="mx-auto mb-4 h-16">
+                        <h4 class="text-xl font-bold mb-2">Money Back Guarantee</h4>
+                        <p class="text-gray-600">We return money within 30 days</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Company Partners Section -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-xl font-bold mb-8">Company Partners</h2>
+                <div class="flex flex-wrap justify-center items-center space-x-4">
+                    <img src="./about-assets/brand1.png" alt="Mango" class="h-12 p-2">
+                    <img src="./about-assets/brand2.png" alt="Zara" class="h-12 p-2">
+                    <img src="./about-assets/brand3.png" alt="Reebook" class="h-12 p-2">
+                    <img src="./about-assets/brand4.png" alt="Asos" class="h-12 p-2">
+                    <img src="./about-assets/brand5.png" alt="stradivarius" class="h-12 p-2">
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-[#e4e4e4] text-black py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <img src="./assets/logo.png" alt="Logo" class="mb-4">
+                        <p>1234 Street Name, City, State 56789</p>
+                        <p>info@example.com</p>
+                        <p>+1 234 567 890</p>
+                        <div class="flex space-x-4 mt-4">
+                            <a href="#" class="text-black"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">COMPANY</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-black">About Us</a></li>
+                            <li><a href="#" class="text-black">Careers</a></li>
+                            <li><a href="#" class="text-black">Blog</a></li>
+                            <li><a href="#" class="text-black">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">SHOP</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-black">Men</a></li>
+                            <li><a href="#" class="text-black">Women</a></li>
+                            <li><a href="#" class="text-black">Kids</a></li>
+                            <li><a href="#" class="text-black">Sale</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">HELP</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-black">My Account</a></li>
+                            <li><a href="#" class="text-black">Order Tracking</a></li>
+                            <li><a href="#" class="text-black">FAQs</a></li>
+                            <li><a href="#" class="text-black">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 text-center text-black">
+                    <p>©2024 UOMO. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
